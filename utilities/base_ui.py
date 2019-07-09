@@ -29,7 +29,7 @@ class BaseUI():
         options.add_argument('--headless')
         options.add_argument(
             '--no-sandbox')  # required when running as root user. otherwise you would get no sandbox errors.
-        driver = webdriver.Chrome(executable_path='D:/chromedriver', chrome_options=options)
+        driver = webdriver.Chrome(executable_path='D:/NMI_Auto/resources/chromedriver', chrome_options=options)
 
         # driver = webdriver.Chrome(ChromeDriverManager().install())
         driver.implicitly_wait(30)
